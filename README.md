@@ -191,7 +191,7 @@ axios.post('https://logistic.groupngs.com/api/', data, config)
 | NO_DRIVER_FOUND | NO_DRIVER_FOUND |
 
 
-##### Delivery Specific
+##### Specific to deliveries
 | Status | Description |
 | :---   | :---        |
 | DRIVER_ON_THE_WAY_TO_PICKUP | DRIVER_ON_THE_WAY_TO_PICKUP |
@@ -209,6 +209,15 @@ axios.post('https://logistic.groupngs.com/api/', data, config)
 | USER_CANCELED_STARTED_TRIP | USER_CANCELED_STARTED_TRIP |
 | DRIVER_CANCELED_STARTED_TRIP | DRIVER_CANCELED_STARTED_TRIP |
 | REQUEST_DELETED_BY_DRIVER | REQUEST_DELETED_BY_DRIVER |
+
+##### Others
+| Status | Description |
+| :---   | :---        |
+| CLIENT_PICKUP_CONFIRMED | CLIENT_PICKUP_CONFIRMED |
+| CLIENT_DROP_OFF_CONFIRMED | CLIENT_DROP_OFF_CONFIRMED |
+| RATING_DONE | RATING_DONE |
+| RATING_DONE_CLIENT | RATING_DONE_CLIENT |
+| RATING_DONE_FREELANCER | RATING_DONE_FREELANCER |
 
 
 ### Current Driver Location
