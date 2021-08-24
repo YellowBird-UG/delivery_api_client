@@ -171,6 +171,36 @@ axios.post('https://logistic.groupngs.com/api/', data, config)
     "status": "PENDING"
 }
 ```
+
+#### Sample Request Statuses
+##### Common
+| Status | Description |
+| :---   | :---        |
+| DRAFT | DRAFT |
+| WAITING_FOR_DRIVER_TO_ACCEPT | WAITING_FOR_DRIVER_TO_ACCEPT |
+| ACCEPTED | ACCEPTED |
+| REJECTED | REJECTED |
+| EXPIRED | EXPIRED |
+| STARTED | STARTED |
+| COMPLETED | COMPLETED |
+| DRIVER_ENDING_TRIP | DRIVER_ENDING_TRIP |
+| SEARCHING_DRIVER | SEARCHING_DRIVER |
+| DRIVER_ARRIVING | DRIVER_ARRIVING |
+| DRIVER_ARRIVED | DRIVER_ARRIVED |
+| PAYMENT_CONFIRMATION | PAYMENT_CONFIRMATION |
+| NO_DRIVER_FOUND | NO_DRIVER_FOUND |
+
+
+##### Delivery Specific
+| Status | Description |
+| :---   | :---        |
+| DRIVER_ON_THE_WAY_TO_PICKUP | DRIVER_ON_THE_WAY_TO_PICKUP |
+| DRIVER_ARRIVED_AT_PICKUP | DRIVER_ARRIVED_AT_PICKUP |
+| DRIVER_ON_THE_WAY_TO_DROP_OFF | DRIVER_ON_THE_WAY_TO_DROP_OFF |
+| DRIVER_ARRIVED_AT_DROP_OFF | DRIVER_ARRIVED_AT_DROP_OFF |
+| ORDER_DELIVERED | ORDER_DELIVERED |
+
+
 ### Current Driver Location
 #### Parameters
 | Parameter | Type        | Status      |   Description |
