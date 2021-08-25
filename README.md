@@ -177,7 +177,7 @@ axios.post('https://logistic.groupngs.com/api/', data, config)
 | Status | Description |
 | :---   | :---        |
 | DRAFT | DRAFT |
-| WAITING_FOR_DRIVER_TO_ACCEPT | WAITING_FOR_DRIVER_TO_ACCEPT |
+| WAITING_FOR_DRIVER_TO_ACCEPT | WAITING FOR DRIVER TO ACCEPT |
 | ACCEPTED | REQUEST ACCEPTED |
 | REJECTED | REQUEST REJECTED |
 | EXPIRED | REQUEST EXPIRED |
