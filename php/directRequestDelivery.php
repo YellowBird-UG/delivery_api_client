@@ -13,7 +13,8 @@ function requestStatus(){
         "action" => "directRequestDelivery",
         "countryCode" => "UG",
         "vehicleType" => "DELIVERY_CAB",
-        "pickUpContactInfo" => array(
+        "paymentMode" => "CASH",
+        "pickupContactInfo" => array(
             "fullName" => "Wafula Abdalah",
             "phoneNumber" => "77900000",
             "countryCode" => "+256",

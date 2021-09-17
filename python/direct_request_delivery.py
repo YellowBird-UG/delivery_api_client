@@ -7,7 +7,8 @@ def direct_request_delivery():
         "action": "directRequestDelivery",
         "countryCode": "UG",
         "vehicleType": "DELIVERY_CAB",
-        "pickUpContactInfo": {
+        "paymentMode": 'CASH',
+        "pickupContactInfo": {
             "fullName": "Wafula Abdalah",
             "phoneNumber": "77900000",
             "countryCode": "+256",

@@ -4,7 +4,8 @@ interface DeliveryBody {
     action: string,
     countryCode: string,
     vehicleType: string,
-    pickUpContactInfo: Contact,
+    paymentMode: String,
+    pickupContactInfo: Contact,
     dropOffContactInfo: Contact,
     packageDescription?: string,
     packageWeight?: number,
@@ -37,7 +38,8 @@ const requestDelivery = () => {
         action: "directRequestDelivery",
         countryCode: "UG",
         vehicleType: "DELIVERY_CAB",
-        pickUpContactInfo: {
+        paymentMode: "CASH",
+        pickupContactInfo: {
             fullName: "Wafula Abdalah",
             phoneNumber: "77900000",
             countryCode: "+256",
