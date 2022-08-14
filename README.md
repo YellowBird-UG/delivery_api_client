@@ -22,7 +22,7 @@ The following examples show how to consume different api actions
 | pickupContactInfo    | object | REQUIRED | Details of the sender i.e.<br/> `{fullName: String (REQUIRED), phoneNumber: String (REQUIRED), email: String (OPTIONAL), gender: String (OPTIONAL), description: String (OPTIONAL), addressLatLng: Array (REQUIRED) i.e. [lat, long], addressLabel: String (REQUIRED), city: String (OPTIONAL), building: String (OPTIONAL), plotNumber: String (OPTIONAL)}`  |
 | dropOffContactInfo   | object | REQUIRED | Details of the receiver i.e.<br/>`{fullName: String (REQUIRED), phoneNumber: String (REQUIRED), email: String (OPTIONAL), gender: String (OPTIONAL), description: String (OPTIONAL), addressLatLng: Array (REQUIRED) i.e. [lat, long], addressLabel: String (REQUIRED), city: String (OPTIONAL), building: String (OPTIONAL), plotNumber: String (OPTIONAL)}` |
 | paymentMode          | string | REQUIRED | Mode of payment , see Payment Modes for details                                                                                                                                                                                                                                                                                                               |
-| pickupCheckList      | array  | OPTIONAL | This are the list of check the dirver needs to perform on the item <br/> '[Item1, Item2]'      
+| pickupCheckList      | array  | OPTIONAL | This are the list of check the dirver needs to perform on the item <br/> `[Item1, Item2]`|     
 
 #### Payement Modes
 
