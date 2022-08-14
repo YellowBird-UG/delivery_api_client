@@ -51,12 +51,12 @@ let config = {
 let data = {
     "action": "directRequestDelivery",
     "countryCode": "UG",
-    "vehicleType": "DELIVERY_CAB",
-    "paymentMode": "CASH",
+    "vehicleType": "DELIVERY_MOTORBIKE",
+    "paymentMode": "CASH_BY_RECEIVER",
     "pickupContactInfo": {
         "fullName": "Wafula Abdalah",
         "phoneNumber": "77900000",
-        "countryCode": "+256",
+        "countryCode": "256",
         "email": "abdalah.wafula@yellowbird.mobi",
         "gender": "",
         "description": "String (OPTIONAL)",
@@ -67,9 +67,9 @@ let data = {
         "plotNumber": "String (OPTIONAL)"
     },
     "dropOffContactInfo": {
-        "fullName": "Nono",
+        "fullName": "Customer name",
         "phoneNumber": "77900000",
-        "countryCode": "+256",
+        "countryCode": "256",
         "email": "",
         "gender": "",
         "description": "String (OPTIONAL)",
@@ -78,7 +78,22 @@ let data = {
         "city": "Kampala",
         "building": "String (OPTIONAL)",
         "plotNumber": "String (OPTIONAL)"
-    }
+    },
+    "packageDetails" :{
+        "packageWeightKg" : 9.4,
+        "packageHeightCm" : 15,
+        "packageWidthCm" : 25,
+        "packageTotalCost" : 39000,
+        "itemLabel" : "Dell Laptop Charger",
+        "itemDescription" : "Dell Laptop Charger, Black in color",
+        "itemColor" : "RED",
+        "itemImageUrl" : "https://snpi.dell.com/snp/images/products/large/en-us~332-1827_v1/332-1827_v1.jpg",
+        "itemQuantity" : 4
+    },
+    "pickupCheckList" : ["Test charge on a similar laptop","The item is new"],
+    "specialInstruction" : "No pickup instruction",
+    "pickupConfirmationOTP" : 1234,
+    "dropOffConfirmationOTP" : 1234
 }
 axios.post('https://logistic.groupngs.com/api/', data, config)
 .then(...)
