@@ -21,11 +21,10 @@ The following examples show how to consume different api actions
 | packagesMultiple     | array  | OPTIONAL | This is used when the dispatch contains multiple items of different natures<br/> `Array of multiple packageDetails [{...},{...}]`                                                                                                                                                                                                                             |
 | pickupContactInfo    | object | REQUIRED | Details of the sender i.e.<br/> `{fullName: String (REQUIRED), phoneNumber: String (REQUIRED), email: String (OPTIONAL), gender: String (OPTIONAL), description: String (OPTIONAL), addressLatLng: Array (REQUIRED) i.e. [lat, long], addressLabel: String (REQUIRED), city: String (OPTIONAL), building: String (OPTIONAL), plotNumber: String (OPTIONAL)}`  |
 | dropOffContactInfo   | object | REQUIRED | Details of the receiver i.e.<br/>`{fullName: String (REQUIRED), phoneNumber: String (REQUIRED), email: String (OPTIONAL), gender: String (OPTIONAL), description: String (OPTIONAL), addressLatLng: Array (REQUIRED) i.e. [lat, long], addressLabel: String (REQUIRED), city: String (OPTIONAL), building: String (OPTIONAL), plotNumber: String (OPTIONAL)}` |
-| paymentMode          | string | REQUIRED | Mode of payment , see Payment Modes for details                                                                                                                                                                                                                                                                                                               |
-
-| orderId| string | OPTIONAL | Id of the order from the market place <br/>    |
-| pickupConfirmationOTP| string | OPTIONAL | In case the partner wants the rider to confirm if the shop or merchant is the correct one <br/>    |
-| dropOffConfirmationOTP| string | OPTIONAL | In case the partner wants the rider to confirm if the customer is the correct one before handeling the item<br/>    |
+| paymentMode          | string | REQUIRED | Mode of payment , see Payment Modes for details|
+| orderId          | string | OPTIONAL | Id of the order from the market place <br/>    |
+| pickupConfirmationOTP          | string | OPTIONAL | In case the partner wants the rider to confirm if the shop or merchant is the correct one <br/>    |
+| dropOffConfirmationOTP          | string | OPTIONAL | In case the partner wants the rider to confirm if the customer is the correct one before handeling the item<br/>    |
 | pickupCheckList      | array  | OPTIONAL | This are the list of check the dirver needs to perform on the item <br/> `[Item1, Item2]`|     
 
 #### Payement Modes
