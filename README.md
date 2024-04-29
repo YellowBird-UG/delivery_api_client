@@ -244,9 +244,6 @@ axios.post('https://logistic.groupngs.com/api/', data, config)
 ****
 
 
-<h2 id="toc_1">2.1 ### Price Estimation (Distance-based pricing) </h2>
-
-
 #### Parameters
 
 | Parameter   | Type   | Status   | Description                                                                                                                                                                                                                                 |
@@ -257,8 +254,46 @@ axios.post('https://logistic.groupngs.com/api/', data, config)
 | deliveryOption       | string | REQUIRED | The type of carrier to take the package i.e. `SAME_DATE, NEXT_DATE, STANDARD`                                                                                                                                                                                                                                           |
 | origin      | array  | REQUIRED | Latitude and Longitude i.e. `[lat, lng]`                                                                                                                                                                                                    |
 | destination | array  | REQUIRED | Latitude and Longitude i.e. `[lat, lng]`                                                                                                                                                                                                    |
+<h2 id="toc_1">2.1 ### Price Estimation (Distance-based pricing) </h2>
 
-```javascrip
+
+
+```javascript
+let config = {
+    headers: {
+        Authorization: 'Bearer ' + privateKey
+    }
+}
+
+let data = {
+    "action": "estimateDeliveryFees",
+    "countryCode": "UG",
+    "origin": "[0.31876900792121887, 32.59235382080078]",
+    "destination": "[0.3047135992937171, 32.483221853186556]"
+}
+axios.post('https://logistic.groupngs.com/api/', data, config)
+.then(...)
+.catch(...)
+```
+
+#### Sample Response
+
+```json
+{
+    "estimatedDistance": 17.12896289593121,
+    "estimatedDuration": 53.63072418301175,
+    "currency": "UGX",
+    "countryCode": "UG",
+    "estimatedFee": 10200,
+    "message": "OK"
+}
+```
+
+                                                     |
+<h2 id="toc_1">2.2 ### Price Estimation (Zone-pricing pricing) </h2>
+
+
+```javascript
 let config = {
     headers: {
         Authorization: 'Bearer ' + privateKey
