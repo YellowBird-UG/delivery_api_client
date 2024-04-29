@@ -140,7 +140,7 @@ let config = {
 let data = {
     "action": "estimateDeliveryFeesAndTime",
     "countryCode": "UG",
-    "vehicleType": "DELIVERY_CAB",
+    "vehicleType": "DELIVERY_MOTORBIKE",
     "origin": "[0.29, 32.62]",
     "destination": "[0.33, 32.58]"
 }
@@ -154,9 +154,9 @@ axios.post('https://logistic.groupngs.com/api/', data, config)
 ```json
 {
   "estimatedDistance": 6.290088835583491,
-  "estimatedDuration": 29.21120981731499,
+  "estimatedDuration": 19.21120981731499,
   "currency": "UGX",
-  "estimatedFee": 8155.734773947344,
+  "estimatedFee": 5150,
   "message": "OK"
 }
 ```
@@ -183,7 +183,7 @@ let config = {
 let data = {
     "action": "nearestDriverDistance",
     "countryCode": "UG",
-    "vehicleType": "DELIVERY_CAB",
+    "vehicleType": "DELIVERY_MOTORBIKE",
     "position": "[0.315133, 32.576353]"
 }
 axios.post('https://logistic.groupngs.com/api/', data, config)
