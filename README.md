@@ -1,20 +1,23 @@
+<header>
+
 # YellowBIRD Delivery API Client
+=====
+</header>
+
 
 Before usage, [sign up](https://logistic.groupngs.com) today to get an API Key (Private Key) which will be used for Authorization.
 
 
 
-<h1 id="toc_1">## Usage </h1>
+## Usage
 
 The following examples show how to consume different api actions
 
 
-
-<h1 id="toc_1">1. SEND A DELIVERY REQUEST </h1>
+## 1. SEND A DELIVERY REQUEST
 ****
 
-<h2 id="toc_1">Parameters</h2>
-#### Parameters
+### Parameters
 
 | Parameter            | Type   | Status   | Description                                                                                                                                                                                                                                                                                                                                                   |
 | :------------------- | :----- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
