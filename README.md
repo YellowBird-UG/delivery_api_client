@@ -136,7 +136,7 @@ axios.post('https://logistic.groupngs.com/api/', data, config)
 
 <h2 id="toc_1">1.2 Delivery Request (Zone-based pricing)</h2>
 
-#### delivery Option
+#### Delivery Options
 
 | Delivery Mode                        | Description                 |
 | :-------------------------- | :-------------------------- |
