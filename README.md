@@ -55,6 +55,14 @@ The following examples show how to consume different api actions
 | POSTPAID_E_COMMERCE_PARTNER | POSTPAID E COMMERCE PARTNER |
 | PREPAID_E_COMMERCE_PARTNER  | PREPAID E COMMERCE PARTNER  |
 
+#### Delivery Options
+
+| Delivery Mode                        | Description                 |
+| :-------------------------- | :-------------------------- |
+| SAME_DAY                        | Same day delivery                        |
+| NEXT_DAY                | Next day delivery                |
+| STANDARD               | Standard delivery                |
+
 
 
 <h2 id="toc_1">1.1 Delivery Request (Distance-based pricing)</h2>
@@ -135,14 +143,6 @@ axios.post('https://logistic.groupngs.com/api/', data, config)
 
 
 <h2 id="toc_1">1.2 Delivery Request (Zone-based pricing)</h2>
-
-#### Delivery Options
-
-| Delivery Mode                        | Description                 |
-| :-------------------------- | :-------------------------- |
-| SAME_DAY                        | Same day delivery                        |
-| NEXT_DAY                | Next day delivery                |
-| STANDARD               | Standard delivery                |
 
 
 
