@@ -37,7 +37,7 @@ The following examples show how to consume different api actions
 | dropOffConfirmationOTP          | string | OPTIONAL | In case the partner wants the rider to confirm if the customer is the correct one before handeling the item<br/>    |
 | pickupCheckList      | array  | OPTIONAL | This are the list of check the dirver needs to perform on the item <br/> `[Item1, Item2]`|     
 
-#### Payement Modes
+#### Payment Modes
 
 | Mode                        | Description                 |
 | :-------------------------- | :-------------------------- |
@@ -135,6 +135,16 @@ axios.post('https://logistic.groupngs.com/api/', data, config)
 
 
 <h2 id="toc_1">1.2 Delivery Request (Zone-based pricing)</h2>
+
+#### delivery Option
+
+| Delivery Mode                        | Description                 |
+| :-------------------------- | :-------------------------- |
+| SAME_DAY                        | Same day delivery                        |
+| NEXT_DAY                | Next day delivery                |
+| STANDARD               | Standard delivery                |
+
+
 
 ```javascript
 let config = {
