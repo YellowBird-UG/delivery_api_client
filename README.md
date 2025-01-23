@@ -279,7 +279,7 @@ let config = {
 }
 
 let data = {
-    "action": "estimateDeliveryFees",
+    "action": "estimateDeliveryFeesAndTime",
     "countryCode": "UG",
     "origin": "[0.31876900792121887, 32.59235382080078]",
     "destination": "[0.3047135992937171, 32.483221853186556]"
